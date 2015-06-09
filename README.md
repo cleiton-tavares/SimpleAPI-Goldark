@@ -14,7 +14,7 @@ $ npm install -g [ WINDOWS ]
 
 ## Creator
 
-@cleiton-tav
+@cleiton_tav
 
 
 ## Copyright and License

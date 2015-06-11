@@ -1,3 +1,4 @@
+var $http = require('http');
 var $goldarkResources = require('./../class/goldarkResources')
 
 
@@ -11,9 +12,11 @@ exports.people = new function (data) {
 exports.authenticatable = new function (data) {
 
 	this.get = function (data) {
-		var url  = $goldarkResources.endpoint('POST', '/sessions')	
-	
-		var a = $https.request(url, function(res) {
+		var url  = $goldarkResources.endpoint('POST', '/sessions');
+		console.log(data);
+
+		var a = $http.request(url, function(res) {
+			httpRes = res;
 			  console.log("statusCode: ", res.statusCode);
 			  console.log("headers: ", res.headers);
 
@@ -27,11 +30,14 @@ exports.authenticatable = new function (data) {
 		  console.error(e);
 		});
 
+
+		return httpRes
+
 	};
-	
+
 	this.set = function (data) {
-		
+
 	};
-	
+
 
 };

@@ -1,4 +1,3 @@
-var $https = require('https');
 var $express = require('express');
 var $bodyParser = require('body-parser');
 var $goldarkResources = require('./class/goldarkResources')
@@ -15,9 +14,10 @@ $app.use('/', $express.static(__dirname + '/public'));
 
 // POST /USERS
 $app.post('/users', $jsonParser,function(req, res) {
-	var auth.status = $users.authenticatable.get(req.body)
+	var auth = {};
+	auth.status = $users.authenticatable.get(req.body)
 	if(auth.status == 'connected'){
-		res.send(auth.code)		
+		res.send(auth.code)
 	}else{
 		res.status(406).send('Not Acceptable');
 	}

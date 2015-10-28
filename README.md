@@ -20,3 +20,7 @@ $ npm install -g [ WINDOWS ]
 ## Copyright and License
 
 Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/cleiton-tavares/simpleapi-goldark/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
